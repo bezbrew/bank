@@ -2,7 +2,6 @@ package bank.core;
 
 public class Client {
     private String name, surname;
-
     private String customerNumber;
 
     public Client(String name, String surname, String customerNumber) {
