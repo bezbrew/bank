@@ -5,5 +5,7 @@ public class Client {
 
     private String pesel;
 
-
+    public String getPesel() {
+        return pesel;
+    }
 }
