@@ -47,4 +47,23 @@ public class Client {
         }
         return false;
     }
+
+    public boolean deposit(String accountNumber, BigDecimal amount) {
+        for(Account account : accountList) {
+            if (account.getAccountNumber().equals(accountNumber))
+                return account.deposit(amount);
+        }
+        return false;
+    }
+
+    public boolean withdraw(String accountNumber, BigDecimal amount) {
+        for(Account account : accountList) {
+            if(account.getAccountNumber().equals(accountNumber))
+                return account.withdraw(amount);
+        }
+        return false;
+
+    }
+
+
 }
