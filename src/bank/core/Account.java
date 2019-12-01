@@ -38,7 +38,7 @@ public class Account {
 
     public boolean withdraw(BigDecimal amount) {
         if(this.balance.compareTo(amount) >= 0) {
-            this.balance.subtract(amount);
+            this.balance = this.balance.subtract(amount);
             return true;
         }
         return false;
